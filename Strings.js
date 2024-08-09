@@ -1,6 +1,6 @@
 function check()
 {
-    var Word = document.getElementById("type").value;//this tells JS where to pull the word on the HTML
+    var Word = document.getElementById("Word").value;//this tells JS where to pull the word on the HTML
     var splitWord = Word.split("");//this splits the word
     var reverse = splitWord.reverse();//this turns the word backwards
     var joinWord = reverse.join(""); //this puts the word back together
