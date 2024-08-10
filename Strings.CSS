@@ -3,3 +3,7 @@ body
     background-color:lightblue;
     color: rgb(136, 0, 255);
 }
+p
+{
+    color: red
+}

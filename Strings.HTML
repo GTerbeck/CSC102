@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <!-- George Terbeck -->
 <html lang="en">
-<head>
+<head><!--this is an open tag-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <script src = "Strings.js"></script>
     <link href="Strings.CSS" rel = "stylesheet" type = "text/css">
-</head>
-<body>
-    <h1> Check Your Word</h1><!-- this us just a header-->
-    <br><!-- this is a space on the page -->
-    <form onsubmit = "return false"><!--this is just what is necessary to get the submit button to work-->
-        <input type = "test" id = "Word"/> <!--this is how I reference the text box on the JS file-->
-        <input type = "submit" onclick = "check();"/><!--this is how I reference the submit button on the JS file-->
+</head><!--this is a close tag-->
+<body><!--this is an open tag-->
+    <h1> Log In Or Whatever </h1><!--this is my header, I typed it out myself-->
+    <br><!--this goes to a new line, I typed it out myself-->
+    <form id = "loginSubmit" onsubmit = "return false"><!--this allows the button to work, I typed it out myself-->
+        First Name: <input type = "text" id = "FName"/><!--this is where you put your first name, I typed it out myself-->
+        <br><!--this goes to a new line, I typed it out myself-->
+        Last Name: <input type = "text" id = "LName"/><!--this is where you put your last name, I typed it out myself-->
+        <br><!--this goes to a new line, I typed it out myself-->
+        Zipcode: <input type = "number" id = "Zipcode"/><!--this is where you would put an ID number, I typed it out myself-->
+        <input type = "submit" onclick = "VerifyID();"><!-- this creates the submit button, I typed it out myself-->
+    
+        <p id = "Login Status" > Status </p>
     </form><!--this is a close tag-->
-    <p id = "palindrome"> Palindrome results: </p><!--this identifies the results "paragraph"-->
-
 </body><!--this is a close tag-->
 </html><!--this is a close tag-->

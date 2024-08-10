@@ -1,20 +1,23 @@
-function check()
+function VerifyID()//this is my function, I typed it out myself
 {
-    var Word = document.getElementById("Word").value;//this tells JS where to pull the word on the HTML
-    var splitWord = Word.split("");//this splits the word
-    var reverse = splitWord.reverse();//this turns the word backwards
-    var joinWord = reverse.join(""); //this puts the word back together
+    var FirstName = document.getElementById("FName").value;//This tells it to check the first name box, I typed it out myself
+    var LastName = document.getElementById("LName").value;//This tells it to check the last name box, I typed it out myself
+    var Zipcode = document.getElementById("Zipcode").value;//This tells it to check the zipcode box, I typed it out myself
 
-    if (Word == joinWord)//this is the first parameter
+    var FullName = FirstName+ " " + LastName;//This is how it knows what to check for the whole 20 characters thing, I typed it out myself
+
+    if (FullName.length > 20)//This is what checks if the name is too long, I typed it out myself
     {
-        document.getElementById("palindrome").innerHTML = "You Got it!!!"//this is what you get if it's a palindrome
+        document.getElementById("Login Status").innerHTML = "INCORRECT, COMPUTER WILL SELF DESTRUCT IN 5 SECONDS"//This is the message you get if your name is too long, I typed it out myself
     }
-    else//this is the second parameter
+    else if (Zipcode.length !=5)//This is what checks the zipcode length, I typed it out myself
     {
-        document.getElementById("palindrome").innerHTML = "You're Wrong. . . Try Again"//this is what you get if it's not a palindrome
+        document.getElementById("Login Status").innerHTML = "INCORRECT, COMPUTER WILL SELF DESTRUCT IN 5 SECONDS"//This is the alert you get if your zipcode isn't 5 digits, I typed it out myself
     }
-
-
+    else//This is the parameter for if you did everything right, I typed it out myself
+    {
+        alert("Good Dob");//This is the alert you get if you typed it right, I typed it out myself
+    }
 }
 
 
