@@ -1,4 +1,4 @@
-function Start()
+function Start()//George Terbeck
 {//I'm going to get this out of the way, I had some of this typed out monday so there's no possible way that I copied your code.
     document.getElementById("Start").disabled = true;//this disables the start button once it is pressed
     document.getElementById("Stop").disabled =false;//this enables the stop button once the start button is clicked
