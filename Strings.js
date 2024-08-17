@@ -1,4 +1,4 @@
-function VerifyID()//this is my function, I typed it out myself
+function VerifyID()//this is my function//George Terbeck
 {
     var FirstName = document.getElementById("FName").value;//This tells it to check the first name box, I typed it out myself
     var LastName = document.getElementById("LName").value;//This tells it to check the last name box, I typed it out myself
